@@ -1,0 +1,7 @@
+[core]
+	editor = vim
+[user]
+	name = jdherman
+	email = jdh33@psu.edu
+[color]
+	ui = 1

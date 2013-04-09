@@ -1,0 +1,30 @@
+# .bashrc
+
+# User specific aliases and functions
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+
+# Automatically added by module
+shopt -s expand_aliases
+
+eval "`dircolors --sh ~/DIR_COLORS`"
+alias ls='ls --color=tty'
+alias q='showq -u jdh33'
+alias qkill='qdel $(qselect -u jdh33)'
+
+# Prompt: (31 = red text)
+if [ ! -z "$PS1" ]; then
+        PS1='\[\033[G\]\[\e]0;\w\a\]\n\[\e[31m\]\u@\h \[\e[33m\]\w\[\e[0m\]\n\$ '
+        bind '"\e[A":history-search-backward'
+        bind '"\e[B":history-search-forward'
+fi
+
+module load git
+
+alias gcam='git commit -am'
+
+set show-all-if-ambiguous on
+set completion-ignore-case on

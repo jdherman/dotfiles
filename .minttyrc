@@ -1,0 +1,13 @@
+BoldAsFont=no
+Font=Consolas
+FontHeight=14
+FontSmoothing=full
+Transparency=medium
+Columns=90
+Rows=46
+FontIsBold=no
+Term=xterm-256color
+CursorType=line
+CursorColour=191,191,191
+ForegroundColour=221,221,221
+BackgroundColour=31,31,31
