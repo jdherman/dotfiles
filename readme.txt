@@ -1,0 +1,1 @@
+Configuration dotfiles for cygwin
