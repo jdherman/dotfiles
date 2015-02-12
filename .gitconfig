@@ -1,7 +1,8 @@
 [core]
 	editor = vim
+	filemode = false
 [user]
 	name = jdherman
-	email = jdh33@psu.edu
+	email = jdherman8@gmail.com
 [color]
 	ui = 1

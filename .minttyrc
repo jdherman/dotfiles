@@ -1,10 +1,10 @@
 BoldAsFont=no
 Font=Consolas
-FontHeight=14
+FontHeight=13
 FontSmoothing=full
-Transparency=medium
-Columns=90
-Rows=46
+Transparency=low
+Columns=85
+Rows=50
 FontIsBold=no
 Term=xterm-256color
 CursorType=line

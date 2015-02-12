@@ -25,7 +25,10 @@ echo -ne '\e]10;#eee8d5\a'  # foreground
 
 export PATH=$PATH:"/cygdrive/c/Program Files/Java/jdk1.7.0_25/bin"
 export PATH="/cygdrive/c/Python27/":$PATH
-export JHDIR="D:/jon"
+export PATH=$PATH:"~/bin/xmlstarlet-1.6.0/"
+export JHDIR="D:/Dropbox"
+export PATH=$HOME/bin:$PATH
+eval "`dircolors --sh /etc/DIR_COLORS`"
 
 alias ls='ls --color=tty'
 alias la='ls -a'
@@ -34,8 +37,9 @@ alias subl='/cygdrive/c/Program\ Files/Sublime\ Text\ 2/sublime_text.exe'
 alias du='du -hs *'
 alias cdj='cd $JHDIR'
 alias xgo='export DISPLAY=:0.0 && startxwin -- -noclipboard'
-
-eval "`dircolors --sh /etc/DIR_COLORS`"
+alias ipy='ipython notebook --pylab inline'
+alias bby='/cygdrive/d/jon/code/bibby/bibby.sh'
+alias open='cygstart'
 
 # ssh key login
 alias key='eval `ssh-agent` && ssh-add'
@@ -43,10 +47,11 @@ alias key='eval `ssh-agent` && ssh-add'
 # git stuff
 alias gcam='git commit -am'
 alias gp='git push'
-alias gundo='git reset --soft HEAD^'
+alias gundo='git reset --hard HEAD^'
 alias gwho='git shortlog -sn'
 alias gstat='git status -sb'
 alias glist='git for-each-ref --shell --format="echo %(refname:short) && git log -n 1 --format=format:\" %%cd%%n %%B\" %(refname)" refs/ | sh'
+alias pip-push='python setup.py sdist upload -r pypi'
 
 # Return to directory shortcut
 bk() { alias $1=cd\ $PWD; }
